@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS4 9.00 Host - 7ABIB</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            /* الصورة الجاسدة كخلفية كاملة */
+            background-image: linear-gradient(rgba(5, 11, 26, 0.55), rgba(5, 11, 26, 0.75)), url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 2px solid rgba(56, 189, 248, 0.5);
+            border-radius: 24px;
+            padding: 40px 30px;
+            max-width: 550px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 0 35px rgba(0, 162, 255, 0.3), inset 0 0 15px rgba(56, 189, 248, 0.1);
+        }
+        h1 {
+            color: #38bdf8;
+            font-size: 32px;
+            margin-bottom: 8px;
+            text-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+        }
+        .sub-title {
+            color: #facc15;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+        .btn-exploit {
+            background: linear-gradient(135deg, #0284c7, #2563eb);
+            color: #ffffff;
+            border: none;
+            padding: 16px 40px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 20px rgba(2, 132, 199, 0.6);
+            width: 100%;
+            margin-top: 15px;
+        }
+        .btn-exploit:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.9);
+            background: linear-gradient(135deg, #0369a1, #1d4ed8);
+        }
+        #status-box {
+            margin-top: 30px;
+            padding: 15px;
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 20px;
+            font-weight: bold;
+            color: #e2e8f0;
+            min-height: 30px;
+            transition: all 0.4s ease;
+        }
+        .footer {
+            margin-top: 25px;
+            font-size: 14px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>👑 PS4 9.00 GOLDHEN HOST 👑</h1>
+    <div class="sub-title">واجهة التعديل الخاصة بـ 7ABIB</div>
+    
+    <button class="btn-exploit" onclick="runExploit()">تفعيل التعديلة الأن 🔥</button>
+
+    <div id="status-box">جاهز لتشغيل التعديلة... اضغط زر التفعيل فوق 🚀</div>
+
+    <div class="footer">إصدار التعديلة: GoldHEN v2.4b16 | 9.00 FW</div>
+</div>
+
+<script>
+    function runExploit() {
+        var box = document.getElementById('status-box');
+        
+        // الخطوة الأولى
+        box.innerHTML = "⏳ رجاء الانتظار... جاري جلب ملفات التعديل بواسطة حبيب";
+        box.style.color = "#facc15";
+        box.style.borderColor = "#facc15";
+
+        // الخطوة الثانية
+        setTimeout(function() {
+            box.innerHTML = "⚡ جاري حقن ثغرة النظام (WebKit Exploit)...";
+            box.style.color = "#38bdf8";
+            box.style.borderColor = "#38bdf8";
+        }, 2200);
+
+        // الخطوة الأخيرة عند ظهور رسالة GoldHEN
+        setTimeout(function() {
+            box.innerHTML = "✅ تم تفعيل التعديل بنجاح بواسطة حبيب! استمتع باللعب 🔥👑";
+            box.style.color = "#4ade80";
+            box.style.borderColor = "#4ade80";
+            box.style.boxShadow = "0 0 15px rgba(74, 222, 128, 0.4)";
+        }, 5000);
+    }
+</script>
+
+</body>
+</html>
